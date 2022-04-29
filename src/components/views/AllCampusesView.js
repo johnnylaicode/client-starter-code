@@ -13,7 +13,7 @@ const AllCampusesView = (props) => {
     return <div>There are no campuses.</div>;
   }
 
-  // If there is at least one campus, render All Campuses view 
+  // If there is at least one campus, render All Campuses view
   return (
     <div>
       <h1>All Campuses</h1>
@@ -26,14 +26,15 @@ const AllCampusesView = (props) => {
           <h4>campus id: {campus.id}</h4>
           <p>{campus.address}</p>
           <p>{campus.description}</p>
-          <hr/>
+          <hr />
         </div>
       ))}
-      <br/>
-      <Link to={`/`}>
+      <br />
+      <Link to={`/newcampus`}>
         <button>Add New Campus</button>
       </Link>
-      <br/><br/>
+      <br />
+      <br />
     </div>
   );
 };

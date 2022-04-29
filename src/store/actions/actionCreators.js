@@ -1,4 +1,4 @@
-import * as at from './actionTypes';
+import * as at from "./actionTypes";
 
 // ACTION CREATORS;
 /** needs to be an action creator
@@ -10,6 +10,27 @@ export const fetchAllCampuses = (campuses) => {
   return {
     type: at.FETCH_ALL_CAMPUSES,
     payload: campuses,
+  };
+};
+
+export const addCampus = (campus) => {
+  return {
+    type: at.ADD_CAMPUS,
+    payload: campus,
+  };
+};
+
+export const deleteCampus = (campusId) => {
+  return {
+    type: at.DELETE_CAMPUS,
+    payload: campusId,
+  };
+};
+
+export const editCampus = (campus) => {
+  return {
+    type: at.EDIT_CAMPUS,
+    payload: campus,
   };
 };
 
@@ -42,7 +63,6 @@ export const deleteStudent = (studentId) => {
     payload: studentId,
   };
 };
-
 
 export const editStudent = (student) => {
   return {
