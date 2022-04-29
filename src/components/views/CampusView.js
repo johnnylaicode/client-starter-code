@@ -13,7 +13,8 @@ const CampusView = (props) => {
   if (!campus) return <h1>No campus found</h1>;
   // Render a single Campus view with list of its students
   return (
-    <div>
+    <div style={{ marginTop: "20px" }}>
+      <img src={campus.imageUrl} alt={campus.name} height="200px" />
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
