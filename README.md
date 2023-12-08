@@ -33,7 +33,7 @@ This error indicates that your application uses an algorithm or key size not sup
 #### Solution: 
 1. If you use *Windows*, in the `package.json` file, set the "scripts" attributes as follows:
 
-```js
+```
   "scripts": {
   "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start", 
   "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build", 
@@ -43,6 +43,6 @@ This error indicates that your application uses an algorithm or key size not sup
 
 2. If you use *Mac OSX or Linux*, include the following command in the `~/.bash_profile` or `~/.bashrc` file.
 
-```js
+```
   export NODE_OPTIONS=--openssl-legacy-provider
 ```
