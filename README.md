@@ -35,8 +35,8 @@ This error indicates that your application uses an algorithm or key size not sup
 
 ```
   "scripts": {
-  "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start", 
-  "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build", 
+  "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start", 
+  "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build", 
   ...
     },
 ```
